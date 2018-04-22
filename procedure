@@ -1,4 +1,25 @@
 # "Homebrew" is the package manager for macOS
-# install Homebrew package tool by using below command
+# "pip" is the Python package manager, installing when Python installed.
+# "Virtualenv" is a tool to create isolated Python environments
+
+Command list:
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install python / brew upgrade python
+pip3 install virtualenv
+python3 -m virtualenv [folder_name]
+source [folder_name]/bin/activate
+pip3 install -r requirements.txt
+deactivate
+
+# requirements.txt for web-cralwer:
+
+beautifulsoup4
+requests
+html5lib
+numpy==1.12
+matplotlib
+selenium
+jieba
+wordcloud
+Pillow
